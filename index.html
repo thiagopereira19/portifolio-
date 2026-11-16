@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thiago Pereira | Desenvolvedor Full Stack Júnior</title>
+    <meta
+      name="description"
+      content="Portfólio de Thiago Pereira, desenvolvedor full stack júnior de Ilhéus (BA). Projetos com front-end, back-end, banco de dados e deploy."
+    />
+    <meta name="theme-color" content="#a21caf" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Thiago Pereira | Desenvolvedor Full Stack Júnior"
+    />
+    <meta
+      property="og:description"
+      content="Pego projetos simples e evoluo até virarem produtos completos. Veja o PADIM’MUSIC e outros trabalhos."
+    />
+    <meta property="og:image" content="[URL-da-imagem-1200x630]" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a21caf'/%3E%3Ctext x='32' y='44' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3ETP%3C/text%3E%3C/svg%3E"
+    />
+    <script>
+      try {
+        var t = localStorage.getItem("tema");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thiago Souza Pereira",
+        "jobTitle": "Desenvolvedor Full Stack Júnior",
+        "email": "Thiagodiju@hotmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ilhéus",
+          "addressRegion": "BA",
+          "addressCountry": "BR"
+        },
+        "alumniOf": ["UESC", "SENAI"],
+        "sameAs": [
+          "https://github.com/thiagopereira19",
+          "https://www.linkedin.com/in/thiagopereira19/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <header class="topo">
+      <div class="wrap topo-in">
+        <a class="logo" href="#inicio" aria-label="Thiago Pereira, início"
+          >TP<span>.</span></a
+        >
+        <nav aria-label="Principal">
+          <a href="#projetos">Projetos</a><a href="#habilidades">Habilidades</a
+          ><a href="#formacao">Formação</a><a href="#contato">Contato</a>
+        </nav>
+        <button
+          id="tema"
+          class="icone"
+          type="button"
+          aria-label="Alternar tema claro/escuro"
+        >
+          ◐
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="inicio" class="hero wrap">
+        <div class="hero-txt">
+          <p class="eyebrow"><i></i>Ilhéus, BA · Em busca da primeira vaga</p>
+          <h1>Thiago<br />Souza Pereira</h1>
+          <p class="cargo">Desenvolvedor Full Stack Júnior</p>
+          <p class="impacto">
+            Pego projetos simples e evoluo até virarem produtos completos, com
+            back-end, banco de dados e deploy.
+          </p>
+          <div class="acoes">
+            <a class="btn" href="#projetos">Ver projetos</a>
+            <a
+              class="btn ghost"
+              href="https://github.com/thiagopereira19"
+              target="_blank"
+              rel="noopener"
+              >GitHub ↗</a
+            >
+            <a
+              class="btn ghost"
+              href="https://www.linkedin.com/in/thiagopereira19/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn ↗</a
+            >
+            <a class="btn ghost" href="curriculo.pdf" download
+              >Baixar currículo</a
+            >
+          </div>
+          <ul class="fatos">
+            <li>UESC · Ciência da Computação</li>
+            <li>SENAI · Desenvolvimento de Sistemas</li>
+            <li>Inglês intermediário</li>
+          </ul>
+        </div>
+        <aside class="evo" aria-labelledby="evo-t">
+          <p class="evo-k">Prova de evolução</p>
+          <p id="evo-t" class="evo-h">De clone a produto</p>
+          <p class="evo-s">
+            Meu clone do Spotify virou o PADIM’MUSIC. Camadas que adicionei:
+          </p>
+          <ol>
+            <li style="--i: 0">
+              Front-end do clone <small>HTML · CSS · JS</small>
+            </li>
+            <li style="--i: 1">API <small>Node.js + Express</small></li>
+            <li style="--i: 2">Login <small>bcrypt + JWT</small></li>
+            <li style="--i: 3">Banco <small>PostgreSQL + migrações</small></li>
+            <li style="--i: 4">
+              Qualidade <small>testes, rate limit, Helmet, CORS</small>
+            </li>
+            <li style="--i: 5">No ar <small>deploy no Render</small></li>
+          </ol>
+          <a
+            class="evo-l"
+            href="https://padimmusic.onrender.com"
+            target="_blank"
+            rel="noopener"
+            >Abrir demo ao vivo ↗</a
+          >
+        </aside>
+      </section>
+
+      <section id="sobre" class="wrap sec reveal">
+        <div class="sobre">
+          <figure class="foto">
+            <img
+              src="images/foto-sobre.jpg"
+              width="640"
+              height="800"
+              loading="lazy"
+              alt="Thiago Pereira sorrindo, de óculos escuros e casaco preto, apoiado no corrimão de uma ponte com a cidade ao fundo"
+            />
+          </figure>
+          <div>
+            <h2><span class="num">01</span>Sobre mim</h2>
+            <p class="texto">
+              Sou de Ilhéus, na Bahia. Curso Ciência da Computação na UESC e
+              Desenvolvimento de Sistemas no SENAI, com foco em full stack. Meu
+              hábito é pegar um exercício de front-end e continuar até virar
+              produto: o clone do Spotify virou o PADIM’MUSIC, com login, banco
+              de dados e deploy. O front-end é onde me sinto mais firme, e o
+              back-end vem evoluindo junto: Node.js e PostgreSQL já rodam em
+              produção no meu projeto principal, e sigo estudando Python com
+              Django.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="wrap sec" aria-labelledby="t-proj">
+        <h2 id="t-proj"><span class="num">02</span>Projetos</h2>
+        <div id="destaque"></div>
+        <div id="grade" class="grade"></div>
+        <h3 class="sub">Exercícios de interface</h3>
+        <ul id="clones" class="chips"></ul>
+      </section>
+
+      <section id="habilidades" class="wrap sec reveal" aria-labelledby="t-hab">
+        <h2 id="t-hab"><span class="num">03</span>Habilidades</h2>
+        <div class="grupos">
+          <div>
+            <h3>Front-end</h3>
+            <ul class="skills">
+              <li>HTML <small>confortável</small></li>
+              <li>CSS <small>confortável</small></li>
+              <li>JavaScript <small>confortável</small></li>
+              <li>React <small>em evolução</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Back-end</h3>
+            <ul class="skills">
+              <li>Node.js + Express <small>no ar no PADIM’MUSIC</small></li>
+              <li>Python (Django) <small>em estudo</small></li>
+              <li>PHP <small>no ar no Controle de EPIs</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Banco de dados</h3>
+            <ul class="skills">
+              <li>PostgreSQL <small>no ar no PADIM’MUSIC</small></li>
+              <li>MySQL <small>no ar no Controle de EPIs</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Ferramentas</h3>
+            <ul class="skills">
+              <li>Git e GitHub <small>uso diário</small></li>
+              <li>Inglês <small>intermediário</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="formacao" class="wrap sec reveal" aria-labelledby="t-for">
+        <h2 id="t-for"><span class="num">04</span>Formação</h2>
+        <ul class="forma">
+          <li>
+            <strong>Ciência da Computação</strong
+            ><span>UESC · graduando · [previsão de conclusão]</span>
+          </li>
+          <li>
+            <strong>Desenvolvimento de Sistemas</strong
+            ><span>SENAI · cursando · [previsão de conclusão]</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contato" class="wrap sec reveal" aria-labelledby="t-con">
+        <h2 id="t-con"><span class="num">05</span>Contato</h2>
+        <p class="texto">
+          Aberto a vagas de desenvolvedor full stack júnior. O caminho mais
+          rápido é o e-mail.
+        </p>
+        <p class="links-contato">
+          <a href="mailto:Thiagodiju@hotmail.com">Thiagodiju@hotmail.com</a>
+          <button id="copiar" class="copiar" type="button">Copiar e-mail</button
+          ><span id="aviso" class="aviso" role="status"></span>
+          <a
+            href="https://www.linkedin.com/in/thiagopereira19/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn ↗</a
+          >
+          <a
+            href="https://github.com/thiagopereira19"
+            target="_blank"
+            rel="noopener"
+            >GitHub ↗</a
+          >
+        </p>
+        <form id="form" class="form">
+          <input
+            type="hidden"
+            name="subject"
+            value="Novo contato pelo portfólio"
+          />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="oculto"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <label>Nome<input name="name" required autocomplete="name" /></label>
+          <label
+            >E-mail<input
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+          /></label>
+          <label
+            >Mensagem<textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Enviar mensagem</button>
+          <p id="status-form" class="aviso" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="wrap">
+        © <span id="ano"></span> Thiago Souza Pereira · Ilhéus, BA
+      </div>
+    </footer>
+  </body>
+</html>
